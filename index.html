@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, viewport-fit=cover">
-    <title>MY MUNAY | Mates, tazas, libretas y accesorios</title>
+    <title>PET SHOP | Comida para perros y gatos</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 <style>
@@ -152,23 +152,23 @@
 <body>
 <div class="app-container">
     <div class="store-header">
-        <div class="logo"><img id="storeLogoImg" class="logo-img" src="" alt="Logo" style="display:none;"><div class="logo-text"><h1 id="storeNameDisplay">MY MUNAY</h1><p>mates · tazas · libretas · yerberas · azucareras · sahumerios</p></div></div>
+        <div class="logo"><img id="storeLogoImg" class="logo-img" src="" alt="Logo" style="display:none;"><div class="logo-text"><h1 id="storeNameDisplay">PET SHOP</h1><p>comida y accesorios para tu mascota</p></div></div>
         <div style="display:flex; gap:14px; flex-wrap: wrap; width: auto;"><button id="adminToggleBtn" class="admin-toggle-btn"><i class="fas fa-shield-alt"></i> Admin</button><div class="cart-summary" id="cartSummaryBtn"><i class="fas fa-bag-shopping"></i> <span class="cart-count" id="cartCountBadge">0</span></div></div>
     </div>
     <div class="hero">
-        <div class="hero-content"><h2>Arte <span style="color:var(--sage-dark);">y esencia</span><br>para cada momento</h2><p>Mates artesanales, tazas únicas, yerberas, azucareras y sahumerios con alma.</p><button class="hero-cta" id="heroShopBtn"><i class="fas fa-feather-alt"></i> Ver colección</button></div>
+        <div class="hero-content"><h2>Comida de calidad<br>para tu mascota</h2><p>Alimento balanceado y snacks para perros y gatos, con calidad y amor.</p><button class="hero-cta" id="heroShopBtn"><i class="fas fa-feather-alt"></i> Ver colección</button></div>
         <div id="heroGalleryContainer" class="hero-gallery"></div>
     </div>
     <div id="adminPanel" class="admin-panel">
         <h2><i class="fas fa-gem"></i> Panel de gestión</h2>
-        <div style="background:white; border-radius:44px; padding:28px; margin-bottom:30px;"><h3><i class="fas fa-store"></i> Identidad</h3><div class="form-group"><div class="form-field"><label>Nombre tienda</label><input type="text" id="storeNameInput" placeholder="MY MUNAY"></div><div class="form-field"><label>Logo</label><input type="file" id="storeLogoFile" accept="image/*"></div><button id="saveStoreSettingsBtn" class="btn btn-primary"><i class="fas fa-save"></i> Guardar todo</button></div></div>
+        <div style="background:white; border-radius:44px; padding:28px; margin-bottom:30px;"><h3><i class="fas fa-store"></i> Identidad</h3><div class="form-group"><div class="form-field"><label>Nombre tienda</label><input type="text" id="storeNameInput" placeholder="PET SHOP"></div><div class="form-field"><label>Logo</label><input type="file" id="storeLogoFile" accept="image/*"></div><button id="saveStoreSettingsBtn" class="btn btn-primary"><i class="fas fa-save"></i> Guardar todo</button></div></div>
         <div style="background:white; border-radius:44px; padding:28px; margin-bottom:30px;">
             <h3><i class="fas fa-images"></i> Galería principal (4 espacios)</h3>
             <p style="color:#6f8f7a; margin-bottom:20px;">Subí hasta 4 imágenes que se mostrarán al lado del texto principal.</p>
             <div id="heroImagesAdminContainer" class="hero-gallery-admin-grid"></div>
         </div>
         <div id="adminStats" class="admin-stats"><div class="stat-card"><i class="fas fa-box-open"></i><h4>Productos</h4><p id="statProducts">0</p></div><div class="stat-card"><i class="fas fa-truck"></i><h4>Pedidos</h4><p id="statOrders">0</p></div><div class="stat-card"><i class="fas fa-chart-line"></i><h4>Ingresos</h4><p id="statRevenue">$0</p></div><div class="stat-card"><i class="fas fa-cubes"></i><h4>Stock</h4><p id="statStock">0</p></div></div>
-        <form id="addProductForm" style="background:white; border-radius:48px; padding:28px; margin-bottom:36px;"><h3><i class="fas fa-plus-circle"></i> Nuevo producto</h3><div class="form-group"><div class="form-field"><label>Nombre</label><input type="text" id="prodName" required></div><div class="form-field"><label>Precio $</label><input type="number" id="prodPrice" step="0.01" required></div><div class="form-field"><label>Stock</label><input type="number" id="prodStock" value="10" required></div><div class="form-field"><label>Categoría</label><select id="prodCategory"><option>Mate</option><option>Taza</option><option>Libreta</option><option>Yerbera</option><option>Azucarera</option><option>Porta Sahumerio</option><option>Porta Celular</option><option>Varios</option></select></div><div class="form-field"><label>Foto</label><input type="file" id="prodImageFile" accept="image/*"><div id="addImagePreview" style="margin-top:8px;"></div></div><button type="submit" id="submitProductBtn" class="btn btn-primary"><i class="fas fa-cloud-upload-alt"></i> Agregar</button></div></form>
+        <form id="addProductForm" style="background:white; border-radius:48px; padding:28px; margin-bottom:36px;"><h3><i class="fas fa-plus-circle"></i> Nuevo producto</h3><div class="form-group"><div class="form-field"><label>Nombre</label><input type="text" id="prodName" required></div><div class="form-field"><label>Precio $</label><input type="number" id="prodPrice" step="0.01" required></div><div class="form-field"><label>Stock</label><input type="number" id="prodStock" value="10" required></div><div class="form-field"><label>Categoría</label><select id="prodCategory"><option>Comida Perro</option><option>Comida Gato</option><option>Snacks</option><option>Higiene</option><option>Accesorios</option><option>Varios</option></select></div><div class="form-field"><label>Foto</label><input type="file" id="prodImageFile" accept="image/*"><div id="addImagePreview" style="margin-top:8px;"></div></div><button type="submit" id="submitProductBtn" class="btn btn-primary"><i class="fas fa-cloud-upload-alt"></i> Agregar</button></div></form>
         <div><div style="display:flex; justify-content:space-between; flex-wrap: wrap; gap: 12px;"><h3><i class="fas fa-history"></i> Historial de pedidos</h3><button id="deleteAllOrdersBtn" class="btn btn-danger btn-sm"><i class="fas fa-trash-alt"></i> Limpiar todo</button></div><div id="ordersContainer" style="margin-top:24px;"></div></div>
     </div>
     <div><div class="products-header"><h2><i class="fas fa-hand-sparkles"></i> Piezas con carácter</h2><div class="search-box"><i class="fas fa-search"></i><input type="text" id="searchInput" placeholder="Buscar..."></div></div><div id="categoryFilters" class="category-filters"></div><div id="productsGrid" class="products-grid"></div></div>
@@ -178,7 +178,7 @@
             <a href="https://wa.me/542645252045" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp: +54 264 5252045</a>
             <a href="https://instagram.com/munay_artsj" target="_blank"><i class="fab fa-instagram"></i> Instagram: @munay_artsj</a>
         </div>
-        <div class="footer-heart">✨ Hecho con <i class="fas fa-heart"></i> para vos ✨</div>
+        <div class="footer-heart">💚 Hecho con <i class="fas fa-heart"></i> para tu mascota</div>
     </footer>
 </div>
 <div id="floatingCart" class="floating-cart"><i class="fas fa-shopping-bag fa-lg"></i><span id="floatingCartBadge" style="position:absolute; top:-6px; right:-6px; background:var(--terracotta); color:white; border-radius:40px; width:24px; height:24px; display:flex; align-items:center; justify-content:center;">0</span></div>
@@ -219,9 +219,9 @@
     const OWNER_WHATSAPP = "542645252045";
     // NUEVA CONTRASEÑA: VALENTINA
     const ADMIN_PASSWORD_HASH = btoa("VALENTINA");
-    const CATEGORIES = ["Todas", "Mate", "Taza", "Libreta", "Yerbera", "Azucarera", "Porta Sahumerio", "Porta Celular", "Varios"];
+    const CATEGORIES = ["Todas","Comida Perro","Comida Gato","Snacks","Higiene","Accesorios","Varios"];
     
-    function getCategoryEmoji(cat) { return { Mate:"🧉", Taza:"☕", Libreta:"📖", Yerbera:"🍃", Azucarera:"🍬", "Porta Sahumerio":"🪔", "Porta Celular":"📱", Varios:"✨"}[cat] || "🛒"; }
+    function getCategoryEmoji(cat) { return { "Comida Perro":"🐶", "Comida Gato":"🐱", "Snacks":"🦴", "Higiene":"🧼", "Accesorios":"🎾", Varios:"✨"}[cat] || "🛒"; }
     function getCategoryPlaceholder(category, name) { const icon = getCategoryEmoji(category); const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><rect width="200" height="200" fill="#F6F2EA"/><text x="100" y="110" font-size="72" text-anchor="middle" dominant-baseline="middle">${icon}</text><text x="100" y="160" font-size="20" fill="#5A7D67" text-anchor="middle" font-weight="600">${name.substring(0,18)}</text></svg>`; return "data:image/svg+xml;base64," + btoa(unescape(encodeURIComponent(svg))); }
     function getProductImageSrc(product) { return product.imageBase64 || getCategoryPlaceholder(product.category, product.name); }
     function escapeHtml(str){ if(!str) return ""; return str.replace(/[&<>]/g, m=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[m])); }
@@ -248,8 +248,8 @@
         try { data = await api("settings/storeInfo") || {}; } catch (e) { console.error(e); }
         if(data.logoBase64) { document.getElementById("storeLogoImg").src = data.logoBase64; document.getElementById("storeLogoImg").style.display = "block"; }
         if(data.storeName) document.getElementById("storeNameDisplay").innerText = data.storeName;
-        else document.getElementById("storeNameDisplay").innerText = "MY MUNAY";
-        document.getElementById("storeNameInput").value = data.storeName || "MY MUNAY";
+        else document.getElementById("storeNameDisplay").innerText = "PET SHOP";
+        document.getElementById("storeNameInput").value = data.storeName || "PET SHOP";
         const heroArr = data.heroImages && Array.isArray(data.heroImages) ? data.heroImages : ["","","",""];
         heroImagesArray = [...heroArr.slice(0,4), ...Array(Math.max(0,4-heroArr.length)).fill("")];
         renderHeroGallery(heroImagesArray);
